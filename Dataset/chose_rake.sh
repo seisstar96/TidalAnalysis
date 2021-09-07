@@ -1,7 +1,7 @@
 #!bin/bash
 
 file=SATraces.TXT
-cp CFM5.3_traces.lonLat CFM5.3_traces_lonLat.txt
+cp CFM5.3_traces.Ori.lonLat CFM5.3_traces_lonLat.txt
 outfile=CFM5.3_traces_lonLat.txt
 sed -i 's/"/ /g' $outfile
    for event in $(cat $file | awk '{print NR}')
